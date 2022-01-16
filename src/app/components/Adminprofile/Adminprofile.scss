@@ -1,0 +1,311 @@
+.aProfileSubCont {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  .setSubcontainer {
+    margin-top: 100px;
+    display: flex;
+    .sideNav {
+      display: flex;
+      flex-direction: column;
+      .editpBtn {
+        font-weight: 400;
+        padding: 10px 10px;
+        border-left: 2px solid #5ac59d;
+        transition: 0.5s;
+        color: #5ac59d;
+      }
+      .cpassBtn {
+        font-weight: 400;
+        height: 40px;
+        padding-left: 15px;
+        padding: 10px 10px;
+        transition: 0.5s;
+      }
+    }
+    .rightCon2 {
+      font-family: Lato;
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      h1 {
+        font-size: 40px;
+      }
+
+      .editCon1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        box-shadow: 0px 0px 10px 0px rgba(56, 53, 53, 0.295);
+        border-radius: 10px;
+        padding: 50px;
+        width: 100%;
+        h2 {
+          font-weight: 600;
+        }
+        .avatarCont {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          .con1Right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 30px;
+            p {
+              color: black;
+              margin-bottom: 20px;
+            }
+            .uploadBtn {
+              font-size: 16px;
+              outline: none;
+              border-radius: 10px;
+            }
+            .upBtnCon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .MuiButton-root {
+                border-radius: 10px;
+                background-color: #34dd87;
+              }
+              .MuiSvgIcon-root {
+                path {
+                  color: #34dd87;
+                }
+                circle {
+                  color: #34dd87;
+                }
+              }
+            }
+          }
+          .avatar {
+            position: relative;
+            .imgLoader {
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              position: absolute;
+              left: 0;
+              right: 0;
+              z-index: 3;
+            }
+            .MuiAvatar-root {
+              height: 200px;
+              width: 200px;
+            }
+          }
+        }
+      }
+      .formCont {
+        margin-top: 50px;
+        width: 100%;
+        box-shadow: 0px 0px 10px 0px rgba(56, 53, 53, 0.295);
+        border-radius: 10px;
+        padding: 50px;
+        form {
+          width: 100%;
+          display: block;
+          .publicP {
+            display: flex;
+            flex-direction: column;
+            .txtCon {
+              margin-top: 20px;
+              .MuiFormControl-root {
+                width: 100%;
+              }
+            }
+          }
+          .locationP {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            .MuiFormControl-root {
+              margin-top: 20px;
+            }
+          }
+          .btnCon {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .saveBtn {
+              font-family: Lato, sans-serif;
+              font-weight: bold;
+              font-size: 14 px;
+              width: 140px;
+              height: 50px;
+              outline: none;
+              margin-top: 30px;
+              border: none;
+              border-radius: 50px;
+              background: #34dd87;
+              transition: 0.2s;
+              color: white;
+              cursor: pointer;
+              &:hover {
+                background: #60e6a0;
+                transform: translateY(-2px);
+              }
+            }
+          }
+        }
+      }
+      .setSocialCont {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+        box-shadow: 0px 0px 10px 0px rgba(56, 53, 53, 0.295);
+        border-radius: 10px;
+        .setSocialSubCont {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 50px;
+          .fbCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .fbSocialLinkCont {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 20px;
+                margin-right: 10px;
+                max-width: 300px;
+                overflow: hidden;
+              }
+            }
+
+            .fbSocialEditBtnCont {
+              .editsaveBtn {
+                margin-left: 20px;
+                color: #00df89;
+              }
+            }
+          }
+          .igCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .igSocialLinkCont {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 20px;
+                margin-right: 10px;
+                max-width: 300px;
+                overflow: hidden;
+              }
+            }
+            .igSocialEditBtnCont {
+              .igEditsaveBtn {
+                margin-left: 20px;
+                color: #00df89;
+              }
+            }
+          }
+          .ttCont {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .ttSocialLinkCont {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 20px;
+                margin-right: 10px;
+                max-width: 300px;
+                overflow: hidden;
+              }
+            }
+            .ttSocialEditBtnCont {
+              .ttEditsaveBtn {
+                margin-left: 20px;
+                color: #00df89;
+              }
+            }
+          }
+          .ytCont {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .ytSocialLinkCont {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 20px;
+                margin-right: 10px;
+                max-width: 300px;
+                overflow: hidden;
+              }
+            }
+            .ytSocialEditBtnCont {
+              .ytEditsaveBtn {
+                margin-left: 20px;
+                color: #00df89;
+              }
+            }
+          }
+          .tikCont {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .tikSocialLinkCont {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 20px;
+                margin-right: 10px;
+                max-width: 300px;
+                overflow: hidden;
+              }
+            }
+            .tikSocialEditBtnCont {
+              .tikEditsaveBtn {
+                margin-left: 20px;
+                color: #00df89;
+              }
+            }
+          }
+          .mailCont {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .mailSocialLinkCont {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 20px;
+                margin-right: 10px;
+                max-width: 300px;
+                overflow: hidden;
+              }
+            }
+            .mailSocialEditBtnCont {
+              .mailEditsaveBtn {
+                margin-left: 20px;
+                color: #00df89;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.confirmMessageCont {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  transform: scale(0);
+  z-index: 11;
+  .confirmMessageForm {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.178);
+    border-radius: 2rem;
+    .cIconCont {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .confirmIcon {
+        font-size: 60px;
+      }
+    }
+    h2 {
+      text-align: center;
+    }
+    .confirmBtnCont {
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      .confirmBtn {
+        color: #fff;
+        font-size: 12px;
+        width: 80px;
+      }
+      .confirmCancelBtn {
+        background-color: #ff3333;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 12px;
+        width: 80px;
+      }
+    }
+  }
+}
+.confirmMessageContShow {
+  transform: scale(1);
+}

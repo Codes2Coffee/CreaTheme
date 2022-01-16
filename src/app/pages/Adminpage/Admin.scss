@@ -1,0 +1,338 @@
+* {
+  font-family: Lato, sans-serif;
+}
+.adSearchBar {
+  border: 2px solid #f2f2f2;
+  width: 25vw;
+  display: flex;
+  .adSearchBar_input {
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 0 0.5em;
+    border: 0;
+    background: transparent;
+    outline: 0;
+  }
+}
+.adminCon {
+  display: flex;
+  .leftCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    // justify-content: center;
+    height: 100vh;
+    width: 275px;
+    border-right: 2px solid #f4f6f8;
+    .avatarCon {
+      transform: translateY(100px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f4f6f8;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 15px 45px;
+      cursor: pointer;
+      p {
+        margin-left: 10px;
+      }
+    }
+    .listCont {
+      width: 100%;
+      margin-top: 100px;
+      .MuiListSubheader-sticky {
+        position: relative;
+      }
+      .dashBtn {
+        background: none;
+        color: #707070;
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+      .dashBtnS {
+        background: #c8facd;
+        color: #00ab55;
+        .MuiSvgIcon-root {
+          color: #00ab55;
+        }
+      }
+      .userBtn {
+        background: none;
+        color: #707070;
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+      .userBtnS {
+        background: #c8facd;
+        color: #00ab55;
+        .MuiSvgIcon-root {
+          color: #00ab55;
+        }
+      }
+      .prodBtn {
+        background: none;
+        color: #707070;
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+      .prodBtnS {
+        background: #c8facd;
+        color: #00ab55;
+        .MuiSvgIcon-root {
+          color: #00ab55;
+        }
+      }
+      .editingBtn {
+        background: none;
+        color: #707070;
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+      .editingBtnS {
+        background: #c8facd;
+        color: #00ab55;
+        .MuiSvgIcon-root {
+          color: #00ab55;
+        }
+      }
+      .ordersBtn {
+        background: none;
+        color: #707070;
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+      .ordersBtnS {
+        background: #c8facd;
+        color: #00ab55;
+        .MuiSvgIcon-root {
+          color: #00ab55;
+        }
+      }
+      .selector {
+        position: absolute;
+        left: 271px;
+        top: 237px;
+        width: 3px;
+        border-radius: 20%;
+        height: 50px;
+        background-color: #5ac59d;
+        z-index: 5;
+        transition: all 150ms ease-in;
+      }
+
+      ._admin_user,
+      ._admin_user_ {
+        top: 285px;
+      }
+      ._admin_product,
+      ._admin_product_ {
+        top: 333px;
+      }
+      ._admin_editing,
+      ._admin_editing_ {
+        top: 381px;
+      }
+    }
+  }
+  .rightCon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 18%;
+    .topNav {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.575);
+      backdrop-filter: blur(5px);
+      height: 130px;
+      width: 100%;
+      position: fixed;
+      z-index: 3;
+      .searchCon {
+        top: 0;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.589);
+        backdrop-filter: blur(5px);
+        box-shadow: 7px 10px 10px 2px rgba(0, 0, 0, 0.219);
+        padding-left: 50px;
+        transform: translateY(-130px);
+        transition: 0.5s;
+        .MuiSvgIcon-root {
+          color: #637381;
+        }
+        input {
+          border: none;
+          outline: none;
+          font-size: 20px;
+          width: 68%;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
+      .searchConDrop {
+        top: 0;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.589);
+        backdrop-filter: blur(5px);
+        box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, 0.089);
+        z-index: 5;
+        padding-left: 50px;
+        transform: translateY(1px);
+        transition: 0.5s;
+        .MuiButton-containedPrimary {
+          background-color: #00ab55;
+        }
+        .MuiSvgIcon-root {
+          color: #637381;
+        }
+        input {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 20px;
+          width: 68%;
+          margin-right: 20px;
+        }
+      }
+
+      .topCon2 {
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        .adSearchBtn {
+          height: 20px;
+          width: 20px;
+          color: #637381;
+        }
+        .bbtn {
+          .MuiButton-root {
+            border-radius: 50%;
+            height: 50px;
+            width: 30px;
+          }
+        }
+        .topAvatarBtn {
+          height: 20px;
+          width: 20px;
+          transform: translateX(68vw);
+          color: #637381;
+          .MuiIconButton-root {
+            height: 50px;
+            width: 50px;
+          }
+        }
+        .adChatBtn {
+          height: 20px;
+          width: 20px;
+          transform: translateX(63vw);
+          color: #637381;
+          .chatIconBtn {
+            &:active {
+              color: #007b55;
+              background-color: #00ab561c;
+            }
+          }
+        }
+      }
+      .menuCont {
+        position: absolute;
+        top: 70px;
+        right: 425px;
+        padding-bottom: 20px;
+        width: 220px;
+        z-index: 5;
+        box-shadow: 0px 0px 10px 2px rgba(53, 55, 71, 0.144);
+        background-color: #fff;
+        border-radius: 10px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+        .menu {
+          height: 100%;
+          width: 100%;
+          .arrowCont {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            font-size: 40px;
+            color: #fff;
+          }
+          .topMenuCont {
+            width: 100%;
+            padding: 20px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+            .menuName {
+              font-weight: 600;
+            }
+            .username {
+              font-size: 14px;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 0.623);
+            }
+          }
+          .botMenuCont {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+            .option1 {
+              width: 100%;
+              padding: 10px 0px;
+              padding-right: 20px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              transition: 0.5s;
+              .menuText {
+                margin-left: 20px;
+              }
+              &:hover {
+                background-color: #f6f7f8;
+              }
+            }
+            .logoutBtnCont {
+              margin-top: 20px;
+              width: 100%;
+              padding: 0px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .logountBtn {
+                border: 1px solid rgba(0, 0, 0, 0.473);
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .menuContShow {
+        transform: scaleY(1);
+      }
+    }
+    .adBotCon {
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-bottom: 50px;
+      margin-top: 130px;
+      // margin-bottom: 50px;F
+    }
+  }
+}

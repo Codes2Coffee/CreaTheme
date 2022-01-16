@@ -1,0 +1,206 @@
+.dashTitle {
+  font-size: 24px;
+  font-weight: 800px;
+  color: black;
+}
+.dashCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  .dashTopCont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 50px;
+    .card1 {
+      height: 200px;
+      width: 250px;
+      background-color: #c8facd;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .circle1 {
+        height: 70px;
+        width: 70px;
+        background-image: linear-gradient(to right, #bbf2c6, #a3e2b7);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #007b55;
+        font-size: 50px;
+      }
+      .cardLabel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 30px;
+        .L1 {
+          color: #005249;
+          font-size: 30px;
+        }
+        .L2 {
+          color: #468d77;
+          font-size: 20px;
+        }
+      }
+    }
+    .card2 {
+      height: 200px;
+      width: 250px;
+      background-color: #d0f2ff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .circle2 {
+        height: 70px;
+        width: 70px;
+        background-image: linear-gradient(to right, #c5e9fb, #acd5f2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0c53b7;
+        font-size: 50px;
+      }
+      .card2Label {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 30px;
+        .L1 {
+          color: #04297a;
+          font-size: 30px;
+        }
+        .L2 {
+          color: #3e62a0;
+          font-size: 20px;
+        }
+      }
+    }
+    .card3 {
+      height: 200px;
+      width: 250px;
+      background-color: #fff7cd;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .circle3 {
+        height: 70px;
+        width: 70px;
+        background-image: linear-gradient(to right, #faefbf, #f2e2a9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b78103;
+        font-size: 50px;
+      }
+      .card3Label {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 30px;
+        .L1 {
+          color: #7a4f01;
+          font-size: 30px;
+        }
+        .L2 {
+          color: #a07e3b;
+          font-size: 20px;
+        }
+      }
+    }
+    .card4 {
+      height: 200px;
+      width: 250px;
+      background-color: #fff7cd;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .circle4 {
+        height: 70px;
+        width: 70px;
+        background-image: linear-gradient(to right, #faefbf, #f2e2a9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b78103;
+        font-size: 30px;
+      }
+      .card4Label {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 30px;
+        .L1 {
+          color: #7a4f01;
+          font-size: 30px;
+        }
+        .L2 {
+          color: #a07e3b;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .dashBotCont {
+    display: flex;
+    padding-right: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    .graphCont {
+      height: 1000px;
+      width: 85%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 40px 10px rgba(40, 54, 59, 0.041);
+      padding: 20p 20px;
+      .graphTitle {
+        margin-bottom: 20px;
+        font-family: Sofia Pro;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .graphWrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    // .pieChartCont {
+    //   height: 100%;
+    //   width: 35%;
+    //   border-radius: 20px;
+    //   box-shadow: 0px 0px 10px 5px rgba(40, 54, 59, 0.041);
+    //   padding: 20px 20px;
+    //   .pieTitle {
+    //     margin-bottom: 20px;
+    //     font-family: Sofia Pro;
+    //   }
+    //   .pieWrapper {
+    //     height: 100%;
+    //     width: 100%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //   }
+    // }
+  }
+}

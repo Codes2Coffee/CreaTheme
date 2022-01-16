@@ -1,0 +1,127 @@
+.failedContSu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  pointer-events: none;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.failedContSuShow {
+  transform: scale(1);
+}
+
+.su_bcontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .su_title {
+    h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 34px;
+    }
+  }
+  .su_ob {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .su_p1 {
+      color: black;
+      width: 390px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .su_formField {
+        border-radius: 2px;
+        border-color: #bcc3ca;
+        border-top: 2px solid #bcc3ca;
+        border-left: 2px solid #bcc3ca;
+        padding-left: 20px;
+        font-size: 16px;
+        height: 50px;
+        width: 30vw;
+        margin-top: 20px;
+      }
+      .su_passField {
+        padding-right: 45px;
+      }
+      .su_formErr {
+        height: 16px;
+        font-size: 14px;
+        color: red;
+      }
+
+      .su_passCon {
+        position: relative;
+        .su_showPass {
+          transition: 0.5s;
+          cursor: pointer;
+          position: absolute;
+          right: 20px;
+          top: 55%;
+          // transform: translateY(-50%);
+        }
+      }
+
+      .su_createBtn {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        background: #205b4b;
+        color: #fff;
+        font-weight: bold;
+        border: 0;
+        margin-top: 40px;
+        border-radius: 50px;
+        font-family: Lato, sans-serif;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background: #5ac59d;
+          transform: translateY(-2px);
+          box-shadow: 0px 15px 20px 0px #5ac59e7c;
+        }
+      }
+    }
+    .cancelBtn {
+      margin-top: 20px;
+      text-transform: lowercase;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 750px) {
+  .su_bcontainer {
+    .su_ob {
+      .su_p1 {
+        width: 100%;
+        text-align: center;
+      }
+      form {
+        width: 100%;
+        padding: 0px 20px;
+        .su_formField {
+          width: 100%;
+        }
+        .su_passCon {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

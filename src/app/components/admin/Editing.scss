@@ -1,0 +1,483 @@
+* {
+  font-family: Sofia Pro;
+}
+.failedContCat {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  pointer-events: none;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.failedContCatShow {
+  transform: scale(1);
+}
+.editingCont {
+  height: 100%;
+  width: 100%;
+  .t1 {
+    font-size: 30px;
+    font-weight: 900px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    font-family: Sofia Pro;
+  }
+  .editingBodyCont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .t2 {
+      color: #3779785d;
+      transform: translateY(70px);
+    }
+    .tt2 {
+      color: #3779785d;
+      transform: translateY(70px);
+    }
+    .homeCont {
+      width: 100%;
+      height: 600px;
+      overflow: auto;
+      transform: scale(0.7);
+      background-color: white;
+      box-shadow: 0px 0px 10px 1px rgba(40, 54, 59, 0.37);
+      border-radius: 10px;
+      overflow-x: hidden;
+      z-index: 1;
+      transition: 0.5s;
+      .cover {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+      }
+      .chld {
+        pointer-events: none;
+        position: relative;
+        z-index: 1;
+        .cover2 {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 10;
+          pointer-events: fill;
+        }
+      }
+      &:hover {
+        transform: scale(0.9);
+        z-index: 5;
+      }
+    }
+    .editImagesCont {
+      padding: 0px 50px;
+      width: 100%;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .editLogoCont {
+        width: 47.5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .logoWrapper {
+          width: 100%;
+          height: 100%;
+          box-shadow: 0px 0px 40px 20px rgba(40, 54, 59, 0.041);
+          padding: 50px 50px;
+          border-radius: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .editLogoTitle {
+            margin-bottom: 50px;
+            font-family: Sofia Pro;
+          }
+
+          .currentLogoPreviewCont {
+            // margin-top: 50px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .logoImgCont {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100px;
+              width: 100%;
+              border-radius: 10px;
+              overflow: hidden;
+              img {
+                height: 100%;
+                border-radius: 10px;
+                object-fit: fill;
+              }
+            }
+          }
+          .inputLogoCont {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            input[type="file"] {
+              display: none;
+            }
+            .uploadLogoBtn {
+              border-radius: 2rem;
+              background-color: #14ac7b;
+            }
+          }
+        }
+      }
+      .editFrontImgCont {
+        width: 47.5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .frontImgWrapper {
+          width: 100%;
+          height: 100%;
+          box-shadow: 0px 0px 40px 20px rgba(40, 54, 59, 0.041);
+          padding: 50px 50px;
+          border-radius: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .editFrontImgTitle {
+            margin-bottom: 20px;
+            font-family: Sofia Pro;
+          }
+
+          .previewFiCont {
+            margin-top: 20px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .fiImgCont {
+              overflow: hidden;
+              height: 200px;
+              width: 100%;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                height: 100%;
+                object-fit: fill;
+                border-radius: 10px;
+              }
+            }
+          }
+
+          .inputFiCont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+
+            input[type="file"] {
+              display: none;
+            }
+            .uploadFiBtn {
+              border-radius: 2rem;
+              background-color: #14ac7b;
+            }
+          }
+        }
+      }
+    }
+
+    .editTitleCont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 50px;
+      .editTitleT {
+        font-family: Sofia Pro;
+      }
+      .titleWrapper {
+        width: 65em;
+        height: 100%;
+        box-shadow: 0px 0px 40px 20px rgba(40, 54, 59, 0.041);
+        padding: 50px 50px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .titleInputCont {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          .titleInput {
+            margin-bottom: 20px;
+            width: 400px;
+          }
+          .tagInput {
+            margin-bottom: 20px;
+            width: 400px;
+          }
+          .fontInput {
+            width: 400px;
+          }
+        }
+        .titleSaveBtnCont {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 20px;
+          .titleSaveBtn {
+            background-color: #14ac7b;
+            height: 50px;
+            width: 120px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .editColorCont {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      .editColorWrapper {
+        width: 65em;
+        height: 100%;
+        box-shadow: 0px 0px 40px 20px rgba(40, 54, 59, 0.041);
+        padding: 50px 50px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .editColorTitle {
+          margin-bottom: 20px;
+          font-family: Sofia Pro;
+        }
+        .colorsCont {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          .colorCont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            width: 150px;
+            .color1 {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #089bab;
+              cursor: pointer;
+              transition: 0.5s;
+              opacity: 0.5;
+              &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+              }
+            }
+            .color2 {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #ff7828;
+              cursor: pointer;
+              transition: 0.5s;
+              opacity: 0.5;
+              &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+              }
+            }
+            .color3 {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #5f40a6;
+              cursor: pointer;
+              transition: 0.5s;
+              opacity: 0.5;
+              &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+              }
+            }
+            .color4 {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #00df89;
+              cursor: pointer;
+              transition: 0.5s;
+              opacity: 0.5;
+              &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+              }
+            }
+            .color5 {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #1a2234;
+              cursor: pointer;
+              transition: 0.5s;
+              opacity: 0.5;
+              &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+              }
+            }
+            .colorLabels {
+              color: #93a1ba;
+            }
+          }
+        }
+        .colorNameCont {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .colorName {
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+          }
+          .colorNameS {
+            display: none;
+          }
+        }
+        .saveEbtnCont {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          .saveEbtn {
+            background-color: #14ac7b;
+            height: 50px;
+            width: 120px;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            padding-right: 20px;
+            .loading1 {
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+    .editCategoryCont {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      .editCategoryWrapper {
+        width: 65em;
+        height: 100%;
+        box-shadow: 0px 0px 40px 20px rgba(40, 54, 59, 0.041);
+        padding: 50px 50px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .editCategoryTitle {
+          margin-bottom: 20px;
+          font-family: Sofia Pro;
+        }
+        .editCategoryTopCont {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          .categoryTextCont {
+            display: flex;
+            align-items: center;
+            .addCategoryBtn {
+              background-color: #14ac7b;
+              margin-left: 20px;
+            }
+          }
+        }
+
+        .categoryTableCont {
+          display: flex;
+          // align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin-top: 50px;
+          .cColumn1 {
+            display: flex;
+            flex-direction: column;
+            .categories {
+              padding: 20px 35px;
+              height: 70px;
+              border-bottom: 1px solid black;
+              display: flex;
+              align-items: center;
+            }
+          }
+          .cColumn2 {
+            display: flex;
+            flex-direction: column;
+            .categories {
+              display: flex;
+              align-items: center;
+              padding: 20px 35px;
+              height: 70px;
+              border-bottom: 1px solid black;
+            }
+          }
+          .cColumn3 {
+            display: flex;
+            flex-direction: column;
+            .categories {
+              padding: 5px 10px;
+              height: 70px;
+              border-bottom: 1px solid black;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+.openChatBtnCont {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 4;
+}
+.profileCon {
+  font-family: Lato, sans-serif;
+  margin-top: 150px;
+  padding: 50px 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  .breadCrumbs {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+  }
+  .pleftCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pAvatar {
+      background-color: rgba(0, 0, 0, 0.171);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      height: 170px;
+      width: 170px;
+      .MuiAvatar-root {
+        height: 150px;
+        width: 150px;
+      }
+    }
+    h1 {
+      font-weight: 400;
+    }
+    .pEmail {
+      margin-top: 10px;
+    }
+    .pAdd {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 10px;
+      h3 {
+        display: inline-block;
+        // text-transform: lowercase;
+        // &::first-letter {
+        //   text-transform: uppercase;
+        // }
+      }
+    }
+  }
+  .prightCon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin-right: 50px;
+    .pBtnCon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .pLeftCont {
+        display: flex;
+        height: 100%;
+        button {
+          width: 150px;
+          min-width: 50px;
+          font-weight: 500;
+          height: 40px;
+          transition: 0.5s;
+          text-align: center;
+          z-index: 3;
+        }
+        position: relative;
+        .topSelector {
+          position: absolute;
+          top: 0;
+          height: 2px;
+          width: 100%;
+          margin-left: -10px;
+          border-radius: 10px;
+        }
+        .selector {
+          position: absolute;
+          left: -5px;
+          bottom: 0px;
+          width: 170px;
+          height: 40px;
+          z-index: 0;
+          transition: all 200ms ease-in;
+          border-bottom-left-radius: 2rem;
+          border-bottom-right-radius: 2rem;
+        }
+
+        ._profile_purchase,
+        ._profile_purchase_ {
+          left: 25px;
+          width: 170px;
+        }
+        ._profile_likes,
+        ._profile_likes_ {
+          left: 153px;
+          width: 80px;
+          width: 145px;
+        }
+        ._profile_deliveryAddress,
+        ._profile_deliveryAddress_ {
+          left: 288px;
+          width: 165px;
+        }
+      }
+
+      // .pListBtn {
+      //   text-transform: lowercase;
+      //   font-size: 20px;
+      //   font-weight: 500;
+      //   height: 40px;
+      //   transition: 0.5s;
+      //   color: #5ac59d;
+      //   border-bottom: 2px solid #5ac59d;
+      //   &::first-letter {
+      //     text-transform: uppercase;
+      //   }
+      //   &:hover {
+      //     color: #5ac59d;
+      //   }
+      // }
+      // .purchaseBtn {
+      //   text-transform: lowercase;
+      //   font-size: 20px;
+      //   font-weight: 500;
+      //   margin-left: 30px;
+      //   transition: 0.5s;
+      //   &::first-letter {
+      //     text-transform: uppercase;
+      //   }
+      //   &:hover {
+      //     color: #5ac59d;
+      //   }
+      // }
+      // .likesBtn {
+      //   text-transform: lowercase;
+      //   font-size: 20px;
+      //   font-weight: 500;
+      //   margin-left: 30px;
+      //   transition: 0.5s;
+      //   &::first-letter {
+      //     text-transform: uppercase;
+      //   }
+      //   &:hover {
+      //     color: #5ac59d;
+      //   }
+      // }
+      .peditBtn {
+      }
+    }
+    .pBotCon {
+      margin-top: 50px;
+      width: 100%;
+      height: 100%;
+      min-height: 65vh;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 0px 10px 0px rgba(56, 53, 53, 0.295);
+      border-radius: 10px;
+      padding: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .profileCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    width: 100%;
+
+    .breadCrumbs {
+      left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .pleftCon {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      .pAdd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .delCont {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.8);
+      }
+    }
+    .prightCon {
+      // min-width: 450px;
+      padding-left: 0px;
+      margin-right: 10px;
+      margin-left: 10px;
+      .pBtnCon {
+        .pLeftCont {
+          display: flex;
+          width: 100%;
+          .purchaseBtnCont {
+            width: 100px;
+            .purchaseBtn {
+              width: 100%;
+            }
+          }
+          .likesBtnCont {
+            width: 100px;
+            .likesBtn {
+              width: 100%;
+              z-index: 1;
+            }
+          }
+          .deliveryBtnCont {
+            width: 100px;
+            .deliveryBtn {
+              width: 100%;
+              font-size: x-small;
+            }
+          }
+
+          .selector {
+            position: absolute;
+            left: 10px;
+            bottom: 0px;
+            width: 80px;
+            height: 40px;
+            z-index: 0;
+            transition: all 200ms ease-in;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+          }
+
+          ._profile_likes,
+          ._profile_likes_ {
+            left: 110px;
+            width: 80px;
+          }
+          ._profile_deliveryAddress,
+          ._profile_deliveryAddress_ {
+            left: 200px;
+            width: 100px;
+          }
+        }
+      }
+      .pBotCon {
+        padding: 10px 10px;
+      }
+    }
+  }
+}

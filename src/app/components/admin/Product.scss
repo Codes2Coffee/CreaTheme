@@ -1,0 +1,240 @@
+.prodCont {
+  padding-right: 50px;
+  .prodTopCont {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    // margin-right: 100px;
+    h3 {
+      font-size: 24px;
+      font-weight: 700px;
+      color: black;
+    }
+    .addProdBtnCont {
+      .addProdBtn {
+        background-color: #00ab55;
+      }
+    }
+  }
+  .productSubCont {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 20px 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 2px rgba(53, 55, 71, 0.144);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .topCont {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .searchBarCont {
+        width: 210px;
+        transition: 0.5s;
+        .prodSearchbar {
+          width: 100%;
+        }
+      }
+      .searchBarF {
+        width: 280px;
+      }
+
+      .rightTop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .filterCategory {
+          width: 200px;
+          transform: scale(0.7);
+        }
+      }
+    }
+    .botCont {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      margin-top: 20px;
+      .prodColumn {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .columnCont {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 200px;
+          width: 250px;
+          padding: 10px 10px;
+          border-bottom: 1px solid black;
+          .prevBtnCont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .prevBtn {
+              height: 40px;
+              width: 40px;
+              float: right;
+              color: rgba(0, 0, 0, 0.432);
+            }
+          }
+          .imgWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .prodImg {
+              height: 95%;
+              object-fit: fill;
+              transition: 0.5s;
+            }
+            .bulletCont {
+              display: flex;
+              height: 20px;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              .bulletSelector {
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.178);
+                margin-right: 10px;
+              }
+            }
+          }
+          .nextBtnCont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .nextBtn {
+              height: 40px;
+              width: 40px;
+              float: right;
+              color: rgba(0, 0, 0, 0.432);
+            }
+          }
+        }
+        .columnCont2 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          height: 200px;
+          width: 200px;
+          padding: 10px 10px;
+          border-bottom: 1px solid black;
+          .dealCont {
+            display: flex;
+            width: 100%;
+            p {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .columnCont3 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          height: 200px;
+          width: 200px;
+          padding: 10px 10px;
+          border-bottom: 1px solid black;
+          overflow: hidden;
+          .variationCont {
+            width: 100%;
+            font-size: 13px;
+            .variants {
+              display: inline-block;
+            }
+          }
+          .sizesCont {
+            width: 100%;
+            font-size: 13px;
+            .sizes {
+              display: inline-block;
+            }
+          }
+          .dateCont {
+            width: 100%;
+            font-size: 13px;
+            display: flex;
+            .date {
+              display: inline-block;
+            }
+          }
+        }
+
+        .columnCont4 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          height: 200px;
+          width: 200px;
+          padding: 10px 10px;
+          border-bottom: 1px solid black;
+          overflow: hidden;
+          .desCont {
+            max-height: 100px;
+            width: 100%;
+            font-size: 13px;
+            overflow-y: scroll;
+          }
+          ::-webkit-scrollbar {
+            display: block;
+            width: 5px;
+            border-radius: 10px;
+          }
+          ::-webkit-scrollbar-track {
+            background: transparent;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #a8a8a8;
+            border-right: none;
+            border-left: none;
+            border-radius: 10px;
+          }
+          ::-webkit-scrollbar-track-piece:end {
+            background: transparent;
+            margin-bottom: 10px;
+          }
+          ::-webkit-scrollbar-track-piece:start {
+            background: transparent;
+            margin-top: 10px;
+          }
+          .numbersCont {
+            width: 100%;
+            p {
+              display: inline-block;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .columnCont5 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          height: 200px;
+          width: 200px;
+          padding: 10px 10px;
+          border-bottom: 1px solid black;
+          overflow: hidden;
+          // .featBtn {
+          //   background-color: #00ab55;
+          // }
+        }
+      }
+    }
+  }
+}

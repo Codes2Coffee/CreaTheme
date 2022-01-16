@@ -1,0 +1,162 @@
+.settingsCon {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .breadCont {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+  }
+  .setSubcontainer {
+    margin-top: 100px;
+    display: flex;
+    .sideNav {
+      display: flex;
+      flex-direction: column;
+      .editpBtn {
+        font-weight: 400;
+        padding: 10px 10px;
+        border-left: 2px solid #5ac59d;
+        transition: 0.5s;
+        color: #5ac59d;
+      }
+      .cpassBtn {
+        font-weight: 400;
+        height: 40px;
+        padding-left: 15px;
+        padding: 10px 10px;
+        transition: 0.5s;
+      }
+    }
+    .rightCon {
+      font-family: Lato;
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 0px 10px 0px rgba(56, 53, 53, 0.295);
+      border-radius: 10px;
+      padding: 50px;
+      width: 700px;
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-weight: 600;
+        margin-top: 40px;
+      }
+      .editCon1 {
+        display: flex;
+        margin-top: 40px;
+        .con1Right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          margin-left: 30px;
+          p {
+            color: black;
+            margin-bottom: 20px;
+          }
+          .uploadBtn {
+            font-size: 16px;
+            outline: none;
+            border-radius: 10px;
+          }
+          .upBtnCon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .MuiButton-root {
+              border-radius: 10px;
+              background-color: #34dd87;
+            }
+            .MuiSvgIcon-root {
+              path {
+                color: #34dd87;
+              }
+              circle {
+                color: #34dd87;
+              }
+            }
+          }
+        }
+        .avatar {
+          .MuiAvatar-root {
+            height: 200px;
+            width: 200px;
+          }
+        }
+      }
+      form {
+        width: 100%;
+        display: block;
+        .publicP {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          .txtCon {
+            margin-top: 20px;
+            .MuiFormControl-root {
+              width: 100%;
+            }
+          }
+        }
+        .locationP {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          .MuiFormControl-root {
+            margin-top: 20px;
+          }
+        }
+        .btnCon {
+          width: 100%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          .saveBtn {
+            font-family: Lato, sans-serif;
+            font-weight: bold;
+            font-size: 14 px;
+            width: 110px;
+            height: 50px;
+            outline: none;
+            margin-top: 30px;
+            border: none;
+            border-radius: 50px;
+            background: #34dd87;
+            transition: 0.2s;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              background: #60e6a0;
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 750px) {
+  .settingsCon {
+    flex-direction: column;
+    .setSubcontainer {
+      flex-direction: column;
+      .sideNav {
+        align-items: flex-start;
+        justify-content: center;
+        .editpBtn {
+          border-left: 0px solid white;
+        }
+      }
+      .rightCon {
+        margin-left: 0px;
+        width: 100%;
+        padding: 10px 10px;
+      }
+    }
+  }
+}

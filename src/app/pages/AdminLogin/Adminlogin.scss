@@ -1,0 +1,86 @@
+.aLoginCont {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top, #65dfc94d, #6cdaeb48);
+  .aLarrowBack {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+  }
+  .aLcenterCont {
+    z-index: 3;
+    .ahomeLoginTitle {
+      display: flex;
+      margin-bottom: 50px;
+      p {
+        color: #377978;
+        font-family: Sofia Pro, sans-serif;
+        font-size: 25px;
+      }
+    }
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 55vh;
+    width: 25vw;
+    border-radius: 1rem;
+    .aLoginEmail,
+    .aLoginPassword {
+      margin-bottom: 50px;
+      width: 250px;
+    }
+  }
+  .ahomeLoginBtnCont {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .aloginSubmitBtn {
+      background-color: #377978;
+      border-radius: 20px;
+      height: 40px;
+      width: 90px;
+      &:hover {
+        background-color: #377978;
+      }
+      &:active {
+        height: 38px;
+        width: 88px;
+      }
+    }
+  }
+  .liCircle1,
+  .liCircle2 {
+    background-color: white;
+
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .liCircle1 {
+    top: 10%;
+    right: 30%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 84, 82, 0.3),
+      rgba(255, 84, 82, 0.1)
+    );
+  }
+  .liCircle2 {
+    bottom: 10%;
+    left: 30%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(132, 18, 104, 0.3),
+      rgba(132, 18, 104, 0.1)
+    );
+  }
+}

@@ -1,0 +1,108 @@
+.aHomeCont {
+  font-family: Sofia Pro, sans-serif;
+  color: #377978;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  .squareCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: white;
+    z-index: 3;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(2rem);
+    .ahomeTitle {
+      font-family: Sofia Pro, sans-serif;
+      font-size: 80px;
+    }
+    .logoCont {
+      height: 300px;
+      width: 500px;
+      background-image: url("../../images/CreaThemeLogo.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .shopBtnCont {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.247);
+    backdrop-filter: blur(5px);
+    .shopBtn {
+      width: 100%;
+      color: #fff;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+  }
+
+  .ahomeButtonCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    .ahomeRegisterBtn {
+      background-color: #ff5452;
+      height: 50px;
+      width: 120px;
+      border-radius: 20px;
+      &:active {
+        height: 48px;
+        width: 118px;
+      }
+    }
+    .ahomeSigninBtn {
+      background-color: #841268;
+      height: 50px;
+      width: 120px;
+      border-radius: 20px;
+      &:active {
+        height: 48px;
+        width: 118px;
+      }
+    }
+  }
+  .circle1,
+  .circle2 {
+    background-color: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.1)
+    );
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle1 {
+    top: 10%;
+    right: 22%;
+  }
+  .circle2 {
+    bottom: 10%;
+    left: 22%;
+  }
+}

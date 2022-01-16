@@ -1,0 +1,41 @@
+.failedContDel {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  pointer-events: none;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.failedContDelShow {
+  transform: scale(1);
+}
+
+.deliveryAdSubCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0px 100px;
+  .infoText {
+    margin-bottom: 20px;
+  }
+  .delAdBtnCont {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .delAdBtn {
+      height: 50px;
+      width: 200px;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media screen and(max-width: 750px) {
+  .deliveryAdSubCont {
+    padding: 10px 10px;
+  }
+}

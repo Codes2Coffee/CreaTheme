@@ -1,0 +1,300 @@
+.messageSubCont {
+  // margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 50vw;
+  height: 88vh;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  z-index: 5;
+  background-color: #fff;
+  max-height: 0;
+  padding: 0;
+  transition: 0.5s;
+  .messageTop {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.603);
+    // border-left: 1px solid rgba(0, 0, 0, 0.226);
+    // border-right: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 0px 20px;
+    z-index: 3;
+    .closeMsgBtn {
+      position: absolute;
+      right: 20px;
+    }
+    .adName {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      p {
+        color: rgba(0, 0, 0, 0.541);
+      }
+    }
+  }
+  .scrollDownBtn {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    animation-name: flipArrow;
+    animation-duration: 0.5s;
+  }
+  @keyframes flipArrow {
+    0% {
+      transform: scaleY(-1) translateX(-50%);
+    }
+    100% {
+      transform: scaleY(1) translateX(-50%);
+    }
+  }
+  .scrollDownBtnShow {
+    display: block;
+  }
+  .messagesCont {
+    height: 100%;
+    width: 100%;
+    // border-left: 1px solid rgba(0, 0, 0, 0.226);
+    // border-right: 1px solid rgba(0, 0, 0, 0.226);
+    overflow-y: scroll;
+    padding: 0px 20px;
+    padding-top: 30px;
+    overflow-x: hidden;
+    margin-top: 70px;
+    .msgWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .dateContShow {
+        display: block;
+        transition: opacity 0.5s;
+        animation-name: slide;
+        animation-duration: 0.5s;
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(50px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+      .dateContShow2 {
+        display: block;
+        transition: opacity 0.5s;
+      }
+      .statWrap {
+        display: flex;
+        flex-direction: column;
+        .dateCont {
+          color: rgba(0, 0, 0, 0.568);
+          transition: 0.5s;
+          z-index: 1;
+        }
+        .dateCont2 {
+          color: rgba(0, 0, 0, 0.568);
+          height: 100%;
+          transition: 0.5s;
+          z-index: 1;
+        }
+        .messageCont {
+          // width: 100%;
+          // display: flex;
+          // align-items: center;
+          // justify-content: flex-start;
+          cursor: pointer;
+          z-index: 2;
+          .messages {
+            height: 100%;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px 10px;
+            min-width: 100px;
+            max-width: 200px;
+            background-color: #edeff1;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .msgText {
+              display: inline-block;
+            }
+          }
+          .messageSend {
+            background-color: #2962ff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 0px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+          }
+          animation-name: slideup;
+          animation-duration: 0.5s;
+        }
+        @keyframes slideup {
+          0% {
+            transform: translateY(150px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        .status {
+          color: rgba(0, 0, 0, 0.555);
+        }
+      }
+
+      // .messageContSend {
+      //   width: 100%;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: flex-end;
+      // }
+    }
+    .msgWrapSend {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .msgImgCont {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+      .wraps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .imgDateCont {
+          p {
+            font-size: x-small;
+          }
+        }
+        .msgImgWrap {
+          width: 150px;
+          border-radius: 10px;
+          overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.13);
+          cursor: pointer;
+          transition: 0.5s;
+          animation-name: slideup2;
+          animation-duration: 0.5s;
+          img {
+            width: 100%;
+            object-fit: fill;
+          }
+        }
+        @keyframes slideup2 {
+          0% {
+            transform: translateY(150px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+    .msgImgContSend {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .noMessage {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  ::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    border-radius: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #a8a8a800;
+    border-right: none;
+    border-left: none;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  ::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+  }
+}
+.messageSubContShow {
+  max-height: 100%;
+  padding: auto;
+}
+@media (max-width: 1036px) {
+  .messageSubCont {
+    width: 70vw;
+  }
+}
+@media (max-width: 495px) {
+  .messageSubCont {
+    width: 100%;
+    right: 0;
+  }
+}
+
+// @media screen and(max-width: 750px) {
+//   .navCont {
+//     display: none;
+//   }
+//   .messageSubCont {
+//     margin-top: 50px;
+//     .messageTop {
+//       top: 0;
+//       width: 100%;
+//     }
+//     .messagesCont {
+//       width: 100%;
+//       height: 100vh;
+//       padding-bottom: 100px;
+//     }
+//     .sendCont {
+//       position: sticky;
+//       bottom: 0;
+//       width: 100%;
+//       padding: 10px 5px;
+//       background-color: #fff;
+//       z-index: 3;
+//     }
+//   }
+// }

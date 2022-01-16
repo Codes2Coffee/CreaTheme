@@ -1,0 +1,191 @@
+.userTopCont {
+  display: flex;
+  width: 100%;
+  .userTitleCont {
+    display: flex;
+    width: 50%;
+    .userTitle {
+      font-size: 24px;
+      font-weight: 700px;
+      color: black;
+      margin-bottom: 50px;
+    }
+  }
+  .addUserCont {
+    margin-right: 50px;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    .addUserBtn {
+      .MuiButton-containedPrimary {
+        background-color: #00ab55;
+      }
+    }
+  }
+}
+
+.userCont {
+  overflow: hidden;
+  border-radius: 10px;
+  // box-shadow: 0px 0px 10px 2px rgba(53, 55, 71, 0.144);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  margin-right: 50px;
+  .userContTop {
+    display: flex;
+    padding: 20px 20px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    .userSearch {
+      display: flex;
+      width: 50%;
+      .Mui-focused {
+        width: 300px;
+      }
+    }
+    .deleteCont {
+      display: none;
+      justify-content: flex-end;
+      width: 100%;
+      color: #637381;
+    }
+  }
+  .userContTopMark {
+    background-color: #c8facd;
+    .userSearch {
+      display: none;
+    }
+    .deleteCont {
+      display: flex;
+    }
+  }
+
+  .MuiDataGrid-root {
+    border: 0;
+    background-color: white;
+  }
+  .MuiCheckbox-colorPrimary.Mui-checked {
+    color: #00ab55;
+  }
+}
+
+.userTableCont {
+  margin-right: 50px;
+  padding: 20px 20px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 2px rgba(53, 55, 71, 0.144);
+  border-radius: 10px;
+  .userNumCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .searchCont {
+      width: 210px;
+      transition: 0.5s;
+      .searchBar {
+        width: 100%;
+      }
+    }
+    .searchContF {
+      width: 250px;
+    }
+    .radioBtns {
+      .rCont {
+        display: flex;
+        .r {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .userMapCont {
+    display: flex;
+    width: 100%;
+    margin-right: 50px;
+    .columnSmall {
+      width: 100px;
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+      .insideUser {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 10px 10px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+      }
+    }
+    .columnL {
+      width: 180px;
+      // border-right: 1px solid rgba(0, 0, 0, 0.39);
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+      .insideUser {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 10px 10px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+      }
+    }
+    .column {
+      width: 220px;
+      // border-right: 1px solid rgba(0, 0, 0, 0.39);
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+      .insideUser {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 10px 10px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+        overflow: hidden;
+      }
+    }
+    .columnWide {
+      width: 370px;
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+      .insideUser {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 70px;
+        padding: 10px 10px;
+        width: 100%; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+      }
+    }
+    // .column2 {
+    //   width: 200px;
+    //   // border-right: 1px solid rgba(0, 0, 0, 0.39);
+    //   h3 {
+    //     text-align: center;
+    //     width: 100%;
+    //   }
+    //   .insideUser2 {
+    //     padding: 10px 10px;
+    //     width: 100%;
+    //     border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,775 @@
+.spinnerCont2 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.addedCont {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 7;
+  pointer-events: none;
+  display: none;
+  transition: 1s;
+}
+
+.addedContShow {
+  display: block;
+}
+
+.failedContLikes {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  pointer-events: none;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.failedContLikesShow {
+  transform: scale(1);
+}
+
+.botPreviewWrapper2 {
+  // transform: translateY(100%);
+  position: fixed;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .botPreview2 {
+    position: fixed;
+    width: 90%;
+    height: 80vh;
+    background-color: #fff;
+    bottom: 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+    transition: 0.5s;
+    z-index: 6;
+    transform: translate(0%, 100%);
+    overflow: hidden;
+    padding: 50px 20px;
+    .closeMainBtnCont {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .mainLikeBtnCont {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .mainLikeBtn {
+        height: 75px;
+        width: 75px;
+        .likedIcon {
+          font-size: 50px;
+          color: #000;
+        }
+        .unlikedIcon {
+          font-size: 50px;
+          color: #000;
+        }
+      }
+    }
+
+    .mainAddtocartBtnCont {
+      position: absolute;
+      top: 75px;
+      right: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 150px;
+      z-index: 9;
+      .mainAddtocartBtn {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .mainContent {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 50px;
+      overflow-y: scroll;
+      .mainTopCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .mainImgWrapper {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 300px;
+          .mainPrevBtn {
+            color: rgba(0, 0, 0, 0.493);
+            .mainPrevIcon {
+              font-size: 30px;
+            }
+          }
+          .mainImgCont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+            img {
+              object-fit: fill;
+              object-position: center;
+              height: 100%;
+            }
+          }
+          .mainNextBtn {
+            color: rgba(0, 0, 0, 0.493);
+            .mainNextIcon {
+              font-size: 30px;
+            }
+          }
+          .numCont {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.205);
+            height: 35px;
+            width: 50px;
+            border-radius: 2rem;
+            .num {
+              color: #fff;
+              font-weight: 200;
+            }
+          }
+        }
+        .mainImgPreview {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          height: 100px;
+          .mainImgPreviewSubCont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            max-width: 400px;
+            overflow-y: scroll;
+            .imgSubWrap {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                height: 100%;
+                object-fit: fill;
+              }
+            }
+          }
+          ::-webkit-scrollbar {
+            display: block;
+            width: 1px;
+            border-radius: 10px;
+            height: 5px;
+          }
+          ::-webkit-scrollbar-track {
+            background: transparent;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #a8a8a8;
+            border-right: none;
+            border-left: none;
+            border-radius: 10px;
+            width: 2px;
+          }
+          ::-webkit-scrollbar-track-piece:end {
+            background: transparent;
+            margin-bottom: 10px;
+          }
+          ::-webkit-scrollbar-track-piece:start {
+            background: transparent;
+            margin-top: 10px;
+          }
+          ::-webkit-scrollbar-button {
+            height: 12px;
+          }
+        }
+        .mainInfoCont {
+          margin-top: 20px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .mainVariationCont {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          .mainVariationSubCont {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            max-width: 300px;
+            overflow-x: scroll;
+            height: 70px;
+            .mainVariations {
+              overflow: hidden;
+              height: 50px;
+              width: 200px;
+            }
+          }
+        }
+        .mainSizeCont {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          .mainSizeSubCont {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            max-width: 300px;
+            overflow-x: scroll;
+            height: 70px;
+            .mainSizes {
+              height: 65px;
+              width: 65px;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+          }
+        }
+        .mainDescriptionCont {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 50px;
+          .mainDescriptionSubCont {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            max-height: 500px;
+            overflow-y: scroll;
+            padding: 10px 20px;
+            p {
+              display: inline-block;
+              text-align: justify;
+            }
+          }
+          ::-webkit-scrollbar {
+            display: block;
+            width: 5px;
+            border-radius: 10px;
+            height: 5px;
+          }
+          ::-webkit-scrollbar-track {
+            background: transparent;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #a8a8a8;
+            border-right: none;
+            border-left: none;
+            border-radius: 10px;
+            width: 10px;
+          }
+          ::-webkit-scrollbar-track-piece:end {
+            background: transparent;
+            margin-bottom: 10px;
+          }
+          ::-webkit-scrollbar-track-piece:start {
+            background: transparent;
+            margin-top: 10px;
+          }
+        }
+        .mainCommentsWrap {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 40px;
+          .mainCommentsCont {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            .commentCont {
+              display: flex;
+              flex-direction: column;
+              margin-top: 30px;
+              .commentSubCont {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                .commentAvatar {
+                  height: 40px;
+                  width: 40px;
+                }
+                .comNameCont {
+                  margin-left: 10px;
+                }
+              }
+              .commentsText {
+                margin-left: 10px;
+              }
+              .mainCommentImgCont {
+                display: flex;
+                align-items: center;
+                height: 80px;
+                .mainCommentImg {
+                  height: 100%;
+                  margin-left: 10px;
+                  img {
+                    height: 100%;
+                    object-fit: fill;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      display: block;
+      width: 5px;
+      border-radius: 10px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #a8a8a8;
+      border-right: none;
+      border-left: none;
+      border-radius: 10px;
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track-piece:end {
+      background: transparent;
+      margin-bottom: 10px;
+    }
+    ::-webkit-scrollbar-track-piece:start {
+      background: transparent;
+      margin-top: 10px;
+    }
+  }
+  .botPreviewShow2 {
+    transform: translate(0%, 0%);
+  }
+}
+.botPreviewWrapperShow2 {
+  top: 0%;
+}
+
+.likesSubCont {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 20px;
+  }
+  .prodWrap {
+    position: relative;
+    display: inline-block;
+    .productCard {
+      position: relative;
+      display: inline-block;
+      padding: 20px 40px;
+      height: 520px;
+      width: 330px;
+      margin-bottom: 50px;
+      margin-left: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.459);
+      cursor: pointer;
+      transition: 0.5s;
+      overflow: hidden;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+        transition: 0.5s;
+      }
+      .topBurger {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+        .topBurgerBtn {
+          height: 100%;
+          width: 100%;
+          .openMain {
+            transition: 0.5s;
+            transform: scaleX(-1);
+          }
+          .closeMain {
+            transition: 0.5s;
+          }
+        }
+      }
+      .prodTopCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .imgWrapper {
+          display: flex;
+          height: 160px;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          .nextBtn {
+            opacity: 0.5;
+          }
+          .prevBtn {
+            opacity: 0.5;
+          }
+          .prodImageCont {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+            animation-name: fade;
+            animation-duration: 1s;
+            .prevBtn {
+              float: left;
+            }
+            img {
+              height: 100%;
+              object-fit: fill;
+            }
+          }
+
+          .prodImageCont2 {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation-name: fade;
+            animation-duration: 2s;
+            transition: 1s;
+            .prevBtn {
+              float: left;
+            }
+            img {
+              height: 100%;
+              object-fit: fill;
+            }
+          }
+          @keyframes fade {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+
+        .imgDisplayCont {
+          display: flex;
+          transform: scale(0.7);
+          .allImageCont {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      .prodTitleCont {
+        display: flex;
+        width: 100%;
+        // margin-top: 20px;
+        justify-content: space-between;
+        .title {
+          width: 50%;
+          text-align: left;
+        }
+        .likePriceCont {
+          width: 50%;
+          text-align: right;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .variantCont {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-color: rgba(0, 0, 0, 0);
+        scroll-behavior: smooth;
+        transform: scale(0.7);
+        .variants {
+          display: flex;
+          width: 150px;
+          height: 50px;
+          margin-left: 20px;
+          border-radius: 5px;
+          border: 1px solid black;
+          text-align: left;
+          overflow: hidden;
+        }
+      }
+
+      .sizesCont {
+        // margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-color: rgba(0, 0, 0, 0);
+        scroll-behavior: smooth;
+        transform: scale(0.6);
+        .sizes {
+          display: flex;
+          width: 150px;
+          height: 50px;
+          margin-left: 20px;
+          border-radius: 5px;
+          border: 1px solid black;
+          text-align: left;
+          overflow: hidden;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: block;
+        width: 1px;
+        border-radius: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #a8a8a8;
+        border-right: none;
+        border-left: none;
+        border-radius: 10px;
+        width: 2px;
+      }
+      ::-webkit-scrollbar-track-piece:end {
+        background: transparent;
+        margin-bottom: 10px;
+      }
+      ::-webkit-scrollbar-track-piece:start {
+        background: transparent;
+        margin-top: 10px;
+      }
+
+      .dateCont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: rgba(0, 0, 0, 0.479);
+          transform: scale(0.6);
+        }
+      }
+
+      .soldCont {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        bottom: 115px;
+        align-items: center;
+        p {
+          color: rgba(0, 0, 0, 0.479);
+        }
+      }
+
+      .likeBtnCont {
+        position: absolute;
+        left: 1px;
+        bottom: 100px;
+        display: flex;
+        align-items: center;
+        .likeBtn {
+          color: rgba(0, 0, 0, 1);
+          border-color: rgba(0, 0, 0, 0.404);
+          .bordered {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .ratingCont {
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        bottom: 60px;
+      }
+
+      .noRate {
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        bottom: 60px;
+        p {
+          font-size: smaller;
+        }
+      }
+
+      .reviewNum {
+        position: absolute;
+        bottom: 65px;
+        left: 10px;
+        p {
+          font-size: smaller;
+          opacity: 0.7;
+        }
+      }
+
+      .addToCartBtnCont {
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .addToCartBtn {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 750px) {
+  .botPreviewWrapper2 {
+    z-index: 7;
+    .botPreview2 {
+      width: 100%;
+      padding: 20px 10px;
+      padding-bottom: 60px;
+      height: 90%;
+      .closeMainBtnCont {
+        top: 15px;
+        right: 10px;
+      }
+      .mainLikeBtnCont {
+        top: 20px;
+        left: 15px;
+
+        .mainLikeBtn {
+          height: 50px;
+          width: 50px;
+          z-index: 5;
+          .likedIcon {
+            font-size: 40px;
+          }
+          .unlikedIcon {
+            font-size: 40px;
+          }
+        }
+      }
+      .mainAddtocartBtnCont {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: unset;
+
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+        .mainAddtocartBtn {
+          height: 40px;
+          width: 70%;
+        }
+      }
+      .mainContent {
+        padding: 20px 10px;
+        padding-bottom: 1 00px;
+        .mainTopCont {
+          .mainCommentsWrap {
+            .mainCommentsCont {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .likesSubCont {
+    min-width: 350px;
+    .prodWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .productCard {
+        margin-left: 0px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+        outline: none;
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
+        -moz-tap-highlight-color: transparent;
+        -o-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+        &:hover {
+          transform: translate(0px, 0px);
+        }
+      }
+    }
+  }
+}
