@@ -1119,7 +1119,7 @@ function Likes() {
               </div>
             ))
         ) : (
-          <div>You haven't liked any products yet.</div>
+          <div>You haven't like any products yet.</div>
         )}
       </div>
     </div>

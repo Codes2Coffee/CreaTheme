@@ -158,16 +158,17 @@ function Purchase() {
   const [rateImg, setRateImg] = useState([]);
 
   const handleRateChange = (e) => {
-    if (e.target.files) {
+    if (e.target.files.length > 0) {
       if (rateImg.length + e.target.files.length > 5)
         return alert("You can only add up to 5 photos.");
-      const fileArray = Array.from(e.target.files).map((file) =>
+      const fileArray = [...e.target.files].map((file) =>
         Object.assign(file, {
           preview: URL.createObjectURL(file),
           id: uuid(),
         })
       );
-      setRateImg((prevImages) => prevImages.concat(fileArray));
+
+      setRateImg([...rateImg, ...fileArray]);
 
       Array.from(e.target.files).map((file) => URL.revokeObjectURL(file));
     }
@@ -391,10 +392,10 @@ function Purchase() {
               accept="image/*"
               multiple
               className={classes.input}
-              id="contained-button-file"
+              id="contained-button-file2"
               onChange={handleRateChange}
             />
-            <label htmlFor="contained-button-file">
+            <label htmlFor="contained-button-file2">
               <IconButton color="inherit" component="span">
                 <AddPhotoAlternateRoundedIcon style={{ opacity: "0.7" }} />
               </IconButton>

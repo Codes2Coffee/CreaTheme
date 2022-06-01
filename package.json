@@ -16,6 +16,7 @@
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/core": "^5.0.0-alpha.54",
     "@mui/icons-material": "^5.0.0",
     "@mui/lab": "^5.0.0-alpha.47",
     "@mui/material": "^5.0.0",
@@ -59,6 +60,7 @@
     "simplebar": "^5.3.5",
     "simplebar-react": "^2.3.5",
     "uuid": "^8.3.2",
+    "webpack-dev-server": "^3.11.1",
     "yup": "^0.32.9"
   },
   "scripts": {
